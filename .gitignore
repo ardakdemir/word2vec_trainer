@@ -1,2 +1,7 @@
 wiki.*
 README.html
+*xml*
+*tsv
+*.txt
+*.npy
+w2v*

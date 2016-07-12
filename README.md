@@ -1,11 +1,19 @@
 # nlp_czech_wiki
 
-Word2Vec implementation on Czech Wikipedia data
+Word2Vec and Fastext trainers
 
-Original study on English Wikipedia data, link [here](http://textminingonline.com/training-word2vec-model-on-english-wikipedia-by-gensim).
+Pipeline:
 
-Czech Wikipedia data were downloaded from [here] (https://dumps.wikimedia.org/cswiki/20160701/cswiki-20160701-pages-articles-multistream.xml.bz2)
+- Download latest wikipedia dump for the language
 
-![screenshot1](https://github.com/anastazie/nlp_czech_wiki/blob/master/screenshot1.png?raw=true)
-![screenshot2](https://github.com/anastazie/nlp_czech_wiki/blob/master/screenshot2.png?raw=true)
-![screenshot3](https://github.com/anastazie/nlp_czech_wiki/blob/master/screenshot3.png?raw=true)
+- Preprocess the xml file into .txt
+
+- Train a word2vec and a fasttext model for the predefined dimension
+
+## Run
+Whole pipeline for czech-finnish-turkish-hungarian can be  run through (this example train 768-dim vectors):
+
+```
+dimension=768
+bash word2vec_pipeline.sh ${dimension}
+```
