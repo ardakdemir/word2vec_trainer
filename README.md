@@ -1,4 +1,4 @@
-# nlp_czech_wiki
+# WORD2VEC MODEL TRAINER 
 
 Word2Vec and Fastext trainers
 
